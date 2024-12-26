@@ -3,7 +3,7 @@ name: TWRP Recovery Builder 2024
 on:
   workflow_dispatch:
     inputs:
-      MANIFEST_BRANCH:
+      MANIFEST_BRANCH:'twrp-12.1
         description: 'TWRP Minimal-Manifest Branch'
         required: true
         default: ''
@@ -13,24 +13,24 @@ on:
         - twrp-12.1
         - twrp-11
         - twrp-9.0
-      DEVICE_TREE:
+      DEVICE_TREE: 'https://github.com/frstprjkt/device_xiaomi_chime-recovery.git'
         description: 'Custom Recovery Tree' 
         required: true
         default: 'https://github.com/kinguser981/cap_sprout_twrp'
       DEVICE_TREE_BRANCH:
-        description: 'Custom Recovery Tree Branch' 
+        description: 'twrp-12.1' 
         required: true
-        default: 'android-12.1'
+        default: 'twrp-12.1'
       DEVICE_PATH:
         description: 'Specify your Device Path' 
         required: true
-        default: 'device/nokia/cap_sprout'
+        default: ' device_xiaomi_chime-recovery'
       DEVICE_NAME:
-        description: 'Specify your Device Codename' 
+        description: 'chime' 
         required: true
         default: 'cap_sprout'
       BUILD_TARGET:
-        description: 'Specify your Build Target' 
+        description: 'recovery' 
         required: true
         default: 'recovery'
         type: choice
